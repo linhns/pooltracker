@@ -8,7 +8,7 @@ function App() {
   const [player1Name, setPlayer1Name] = useState("");
   const [player2Name, setPlayer2Name] = useState("");
 
-  return gameStarted ? (
+  return (gameStarted ? (
     <Scoreboard
       setGameStarted={setGameStarted}
       maxRacks={maxRacks}
@@ -22,7 +22,7 @@ function App() {
       setPlayer1Name={setPlayer1Name}
       setPlayer2Name={setPlayer2Name}
     />
-  );
+  ));
 }
 
 export default App;
